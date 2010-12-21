@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Barker</title>
+<link href="barker.css" type="text/css" rel="stylesheet" media="screen" />
+<style type="text/css">
+body{font-family:Georgia,Times,serif; color:#333333; background:#eeeeee;}
+#container{width:960px; margin:20px auto 0;}
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<h1>My Random Content</h1>
+		<h2>Filler content by <a href="http://chrisvalleskey.com/fillerama/">Fillerama</a></h2>
+		<p>We're rescuing ya. Daddy Bender, we're hungry. You guys go on without me! I'm going to go... look for more stuff to steal!</p>
+		<p>But I've never been to the moon! It doesn't look so shiny to me. I videotape every customer that comes in here, so that I may blackmail them later. Maybe I love you so much I love you no matter who you are pretending to be. Can we have Bender Burgers again?</p>
+		<p>Hey! I'm a porno-dealing monster, what do I care what you think? Say what? I barely knew Philip, but as a clergyman I have no problem telling his most intimate friends all about him.</p>
+		<p>Take me to your leader! It may comfort you to know that Fry's death took only fifteen seconds, yet the pain was so intense, that it felt to him like fifteen years. And it goes without saying, it caused him to empty his bowels. So, how 'bout them Knicks? [turns off the TV] No, of course not. It was... uh... porno. Yeah, that's it. Uh, is the puppy mechanical in any way?</p>
+		<p>[sarcastically] Is the Space Pope reptilian!? I don't 'need' to drink. I can quit anytime I want! Son, as your lawyer, I declare y'all are in a 12-piece bucket o' trouble. But I done struck you a deal: Five hours of community service cleanin' up that ol' mess you caused. Do a flip! She also liked to shut up! I am Singing Wind, Chief of the Martians.</p>
+		<p>We're rescuing ya. Daddy Bender, we're hungry. You guys go on without me! I'm going to go... look for more stuff to steal!</p>
+		<p>But I've never been to the moon! It doesn't look so shiny to me. I videotape every customer that comes in here, so that I may blackmail them later. Maybe I love you so much I love you no matter who you are pretending to be. Can we have Bender Burgers again?</p>
+		<p>Hey! I'm a porno-dealing monster, what do I care what you think? Say what? I barely knew Philip, but as a clergyman I have no problem telling his most intimate friends all about him.</p>
+		<p>Take me to your leader! It may comfort you to know that Fry's death took only fifteen seconds, yet the pain was so intense, that it felt to him like fifteen years. And it goes without saying, it caused him to empty his bowels. So, how 'bout them Knicks? [turns off the TV] No, of course not. It was... uh... porno. Yeah, that's it. Uh, is the puppy mechanical in any way?</p>
+		<p>[sarcastically] Is the Space Pope reptilian!? I don't 'need' to drink. I can quit anytime I want! Son, as your lawyer, I declare y'all are in a 12-piece bucket o' trouble. But I done struck you a deal: Five hours of community service cleanin' up that ol' mess you caused. Do a flip! She also liked to shut up! I am Singing Wind, Chief of the Martians.</p>
+	</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="barker.js"></script>
+<script type="text/javascript">
+	// Create a barker notice stating "X seconds. And counting." that lasts for 8 seconds
+	function rundates(){
+		ct = new Date(); 
+		barker.notice( ct.getSeconds() + ' seconds. And counting.', 'notice.png', 8000 );
+	}
+	
+	$(document).ready(function(){
+		barker.options({
+			'limit' : 4,
+			'path' : 'ico/'
+		});
+		// Create a persistant, ice-cold notice
+		barker.notice("It's time for a beer!", 'beer.png', 0);
+		
+		// Create a new notice every 5 seconds
+		setInterval(rundates, 5000);
+	});
+</script>
+</body>
+</html>
