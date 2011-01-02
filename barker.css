@@ -2,7 +2,9 @@
 	Barker styles
 */
 #barker-notices{position:fixed; bottom:0; right:0; width:300px; overflow-y:hidden; margin:0; padding:0; max-height:100%; font-family:'Helvetica Neue',Arial,Helvetica,sans-serif; font-size:13px; background:transparent; z-index:9999;}
-.barker-notice{display:block; margin:10px 10px; padding:10px 10px 10 68px; color:#fff; text-shadow:1px 1px 1px #333; background:rgba(51,51,51,.8); border:2px solid #555; border-radius:10px; -moz-border-radius:10px;}
+.barker-notice{position:relative; display:block; margin:10px 10px; padding:10px 10px 10 68px; color:#fff; text-shadow:1px 1px 1px #333; background:rgba(51,51,51,.8); border:2px solid #555; border-radius:10px; -moz-border-radius:10px;}
 .barker-notice.persist{background:rgba(61,0,0,.8);}
 .barker-notice img{padding-right:10px; vertical-align:middle;}
+.barker-notice .barker-close{position:absolute; top:-6px; left:-8px; width:18px; height:18px; text-indent:-9999px; background:url('ico/close.png') top left no-repeat; z-index:10000; display:none;}
 .barker-notice.barker-hover{border-color:#eaeaea;}
+.barker-notice.barker-hover .barker-close{display:block;}
